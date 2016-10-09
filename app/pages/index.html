@@ -2,11 +2,41 @@
 <html ng-app="blocChat">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Bloc Base Project</title>
+    <title>Bloc Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <script src="https://use.typekit.net/jxe8iye.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 </head>
 <body>
-	<script>
+	<nav class="topbar"></nav>
+	<nav class="leftnav">
+		<a href="/">
+			<img class="logo" src="assets/images/logo.png" alt="chatter logo">
+		</a>
+	</nav>
+	<div class="chatbox">
+		<div class="textfield">
+			<div class="icon-send"><img src="assets/images/icon_send.png"></span>
+		</div>
+	</div>
+	<ui-view></ui-view>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+
+
+    <script src="/scripts/app.js"></script>
+
+
+		<script>
   	// Initialize Firebase
   		var config = {
 	    	apiKey: "AIzaSyCXtNtSEaRc51LWYbLHFBWo1t9mX2u4f1w",
@@ -17,10 +47,5 @@
   		};
   		firebase.initializeApp(config);
 	</script>
-    <script src="/scripts/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
-	<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
-</body>
+	</body>
 </html>
