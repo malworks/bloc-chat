@@ -1,0 +1,20 @@
+<nav class="topbar"></nav>
+	<nav class="leftnav">
+		<a href="/">
+			<img class="logo" src="assets/images/logo.png" alt="chatter logo">
+		</a>
+		<div class="rooms">
+	<p>ROOMS</p>
+	<img src="assets/images/icon_addroom.png" alt="add room icon">
+	<ul>
+		<li ng-repeat="room in RoomCtrl.rooms">
+			{{RoomCtrl.rooms}}
+		</li>
+	</ul>
+</div>
+	</nav>
+	<div class="chatbox">
+		<div class="textfield">
+			<div class="icon-send"><img src="assets/images/icon_send.png"></span>
+		</div>
+	</div>

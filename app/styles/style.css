@@ -28,6 +28,7 @@ body {
 	position: relative;
 	left: 1.5rem;
 	top: 1.5rem;
+	margin-bottom: 5rem;
 }
 
 .topbar {
@@ -68,4 +69,26 @@ body {
 .icon-send img {
 	max-width: 70%;
 	
+}
+
+.rooms {
+	display: table;
+	left: 1.5rem;
+	position: relative;
+	width: 21rem;
+}
+
+.rooms p {
+	position: relative;
+	font-family: "balboa";
+	color: #fff;
+	display: table-cell;
+	font-size: 1.5rem;
+}
+
+.rooms img {
+	position: relative;
+	display: table-cell;
+	width: 20px;
+	height: 20px;
 }
