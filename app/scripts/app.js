@@ -9,7 +9,7 @@
         $stateProvider
         	.state('leftbar', {
             	url: '/',
-            	controller: 'RoomCtrl as RoomCtrl',
+            	controller: 'RoomCtrl as room',
             	templateUrl: '/templates/leftbar.html'
          	});
 

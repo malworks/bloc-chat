@@ -92,3 +92,8 @@ body {
 	width: 20px;
 	height: 20px;
 }
+
+ul li {
+	font-family: 'balboa';
+	color: #fff;
+}
