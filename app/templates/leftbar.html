@@ -1,4 +1,4 @@
-<nav class="topbar"></nav>
+<!--<nav class="topbar"></nav>
 	<nav class="leftnav">
 		<a href="/">
 			<img class="logo" src="assets/images/logo.png" alt="chatter logo">
@@ -13,8 +13,41 @@
 	</ul>
 </div>
 	</nav>
+
+	<div class="create-room">
+	<input type="text" ng-model="room.newChatRoom.name">
+	<input type="submit" ng-click="room.createNewRoom()">
+	</div>
 	<div class="chatbox">
 		<div class="textfield">
-			<div class="icon-send"><img src="assets/images/icon_send.png"></span>
+			<div class="icon-send"><img src="assets/images/icon_send.png">
 		</div>
 	</div>
+
+
+
+	<style>
+		.create-room{
+			position: relative;
+		}
+	</style> -->
+
+<div class="row">
+	<div class="col-lg-4 topbar">topbar</div>
+</div>
+<div class="row">
+	<div class="col-lg-4 leftnav">
+		<img class="logo img-responsive" src="assets/images/logo.png" alt="chatter logo">
+	</div>
+	<div class="col-lg-8 chatbox">
+		<div class="container">
+			<input type="text" class="form-control textfield" id="usr">
+			<div class="icon-send">
+				<span class="glyphicon glyphicon-upload"></span>
+			</div>	
+		</div>
+	</div>	
+</div>
+
+
+
