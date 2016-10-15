@@ -47,6 +47,9 @@ modal-dialog {
 }
 
 .modal-button {
-  position: relative;
-  top: -10px;
+  cursor: pointer;
+}
+
+.create-room h3 {
+  color: #999;
 }

@@ -1,4 +1,4 @@
-<!--<nav class="topbar"></nav>
+<!-- <nav class="topbar"></nav>
 	<nav class="leftnav">
 		<a href="/">
 			<img class="logo" src="assets/images/logo.png" alt="chatter logo">
@@ -30,7 +30,7 @@
 		.create-room{
 			position: relative;
 		}
-	</style> -->
+	</style>  -->
 
 <div class="row">
 	<div class="col-lg-4 topbar"></div>
@@ -44,21 +44,39 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-12">
-				  <ng-include src="'/templates/rooms.html'"></ng-include>
-			</div>	
-</div>
-	</div>
-	<div class="col-lg-9 chatbox">
-		<div class="input">
-			<input type="text" class="form-control textfield" id="usr">	
-		</div>
-	</div>
+				<section class="rooms" ng-controller="ModalCtrl as modal">
+					<h3>ROOMS</h3>
+					<a class="modal-button" ng-click="modal.open()">
+						<img src="assets/images/icon_addroom.png" alt="add room icon">
+					</a>
+				</section>
 
-<!-- 	<div class="create-room">
-	<input type="text" ng-model="room.newChatRoom.name">
-	<input type="submit" ng-click="room.createNewRoom()">
-	</div> -->	
+				<!-- Temporary Create Room. This one works! -->
+				<div class="create-room">
+					<input type="text" ng-model="room.newChatRoom.name">
+					<input type="submit" ng-click="room.createNewRoom()">
+				</div>
+
+				
+				<section class=""> 	
+					<ul>
+						<li ng-repeat="room in room.rooms">
+							{{room.name}}
+						</li>
+					</ul>
+				</section>
+				<!-- <div class="col-lg-9 chatbox">
+					<div class="input">
+						<input type="text" class="form-control textfield" id="usr">	
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>	
 </div>
+
+
+	
 
 
 
