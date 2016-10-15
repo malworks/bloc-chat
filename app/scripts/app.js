@@ -11,7 +11,13 @@
             	url: '/',
             	controller: 'RoomCtrl as room',
             	templateUrl: '/templates/leftbar.html'
-         	});
+         	})
+
+            // .state('modal', {
+            //         url: '/modal',
+            //         controller: 'ModalCtrl as modal',
+            //         templateUrl: '/templates/modal.html'
+            // });
 
     }
  

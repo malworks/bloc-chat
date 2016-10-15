@@ -33,21 +33,34 @@
 	</style> -->
 
 <div class="row">
-	<div class="col-lg-4 topbar">topbar</div>
+	<div class="col-lg-4 topbar"></div>
 </div>
 <div class="row">
-	<div class="col-lg-4 leftnav">
-		<img class="logo img-responsive" src="assets/images/logo.png" alt="chatter logo">
-	</div>
-	<div class="col-lg-8 chatbox">
-		<div class="container">
-			<input type="text" class="form-control textfield" id="usr">
-			<div class="icon-send">
-				<span class="glyphicon glyphicon-upload"></span>
-			</div>	
+	<div class="col-lg-3 leftnav">
+		<div class="row">
+			<div class="col-lg-12">
+				<img class="logo img-responsive" src="assets/images/logo.png" alt="chatter logo">
+			</div>
 		</div>
-	</div>	
+		<div class="row">
+			<div class="col-lg-12">
+				  <ng-include src="'/templates/rooms.html'"></ng-include>
+			</div>	
 </div>
+	</div>
+	<div class="col-lg-9 chatbox">
+		<div class="input">
+			<input type="text" class="form-control textfield" id="usr">	
+		</div>
+	</div>
+
+<!-- 	<div class="create-room">
+	<input type="text" ng-model="room.newChatRoom.name">
+	<input type="submit" ng-click="room.createNewRoom()">
+	</div> -->	
+</div>
+
+
 
 
 
