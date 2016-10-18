@@ -1,37 +1,3 @@
-<!-- <nav class="topbar"></nav>
-	<nav class="leftnav">
-		<a href="/">
-			<img class="logo" src="assets/images/logo.png" alt="chatter logo">
-		</a>
-		<div class="rooms">
-	<p>ROOMS</p>
-	<img src="assets/images/icon_addroom.png" alt="add room icon">
-	<ul>
-		<li ng-repeat="room in room.rooms">
-			{{room.name}}
-		</li>
-	</ul>
-</div>
-	</nav>
-
-	<div class="create-room">
-	<input type="text" ng-model="room.newChatRoom.name">
-	<input type="submit" ng-click="room.createNewRoom()">
-	</div>
-	<div class="chatbox">
-		<div class="textfield">
-			<div class="icon-send"><img src="assets/images/icon_send.png">
-		</div>
-	</div>
-
-
-
-	<style>
-		.create-room{
-			position: relative;
-		}
-	</style>  -->
-
 <div class="row">
 	<div class="col-lg-4 topbar"></div>
 </div>
@@ -50,29 +16,29 @@
 						<img src="assets/images/icon_addroom.png" alt="add room icon">
 					</a>
 				</section>
-
-				<!-- Temporary Create Room. This one works! -->
-				<div class="create-room">
-					<input type="text" ng-model="room.newChatRoom.name">
-					<input type="submit" ng-click="room.createNewRoom()">
-				</div>
-
 				
 				<section class=""> 	
 					<ul>
-						<li ng-repeat="room in room.rooms">
-							{{room.name}}
+						<li ng-repeat="zebra in room.rooms" ng-click="room.setActiveRoom(zebra)">
+							 {{zebra.name}}
 						</li>
 					</ul>
 				</section>
-				<!-- <div class="col-lg-9 chatbox">
-					<div class="input">
+				<div class="col-lg-9 chatbox">
+
+				<p> Blah blah lorem ipsum</p>
+					<!-- <div class="input">
 						<input type="text" class="form-control textfield" id="usr">	
 					</div> -->
 				</div>
 			</div>
 		</div>
 	</div>	
+
+
+	<div class="col-lg-9">
+		{{room.activeRoom}}
+	</div>
 </div>
 
 
