@@ -28,25 +28,32 @@
 
 (function(){
     function ModalDialog($scope, $uibModalInstance, Room){
-        var $ctrl = this;
 
         // creates room from open modal
-        $scope.confirm = function(room){
+        $scope.submit = function(){
             console.log("Does this work?");
-            Room.createNewRoom($ctrl.newChatRoom);
-            $ctrl.newChatRoom = {}
-            $uibModalInstance.close(); //standard close per uibmodal website
+              console.log($scope.newChatRoom)
+            createNewRoom();
+            // $uibModalInstance.close(); 
         };
+
+        var createNewRoom = function() {
+            console.log($scope.newChatRoom)
+            Room.all.$add( $scope.newChatRoom );
+            $scope.newChatRoom = {};
+        };
+
+
 
         // closes modal window
         $scope.cancel = function(){
-            $uibModalInstance.dismiss('cancel'); //standard close per uibmodal website 
+            $uibModalInstance.dismiss('cancel'); 
         };
 
     }
 
     angular
-        .module("blocChat")
-        .controller("ModalDialog", ["$scope", "$uibModalInstance", "Room", ModalDialog]);
+        .module('blocChat')
+        .controller('ModalDialog', ['$scope', '$uibModalInstance', 'Room', ModalDialog]);
 })();
 

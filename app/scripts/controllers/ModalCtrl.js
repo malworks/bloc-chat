@@ -16,12 +16,12 @@
     function ModalCtrl($scope, $uibModal) {
 
         this.open = function(){
-        	console.log("Click click");
+        	console.log("Open Modal");
             var modalInstance = $uibModal.open({
                 templateUrl: '/templates/modal.html',
                 controller: 'ModalDialog',
-                size: 'md', // size per uimodal website
-                backdrop: 'static' // disables closing of modal by clicking anything but the buttons
+                size: 'md', 
+                backdrop: 'static'
             });
         };
     }
