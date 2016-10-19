@@ -19,6 +19,15 @@
 	height: 15%;
 }
 
+.topbar h3 {
+	position: relative;
+	font-family: "balboa";
+	color: #fff;
+	display: table-cell;
+	font-size: 2rem;
+	left: 392px;
+}
+
 .chatbox {
 	position: relative;
 	width: 75%;

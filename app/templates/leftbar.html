@@ -1,5 +1,7 @@
 <div class="row">
-	<div class="col-lg-4 topbar"></div>
+	<div class="col-lg-4 topbar">
+		<h3>{{room.activeRoom.name}}</h3>
+	</div>
 </div>
 <div class="row">
 	<div class="col-lg-3 leftnav">
@@ -29,6 +31,12 @@
 	</div>	
 	<div class="col-lg-9 chatbox">
 		{{room.activeRoom}}
+		<ul>
+			<li ng-repeat="giraffe in room.listMessages">
+			{{giraffe}}
+			</li>
+		</ul>
+		
 
 		<div class="input">
 			<input type="text" class="form-control textfield" id="usr">	
