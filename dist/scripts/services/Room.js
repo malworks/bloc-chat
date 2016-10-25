@@ -3,16 +3,16 @@
     var ref = firebase.database().ref("rooms");
     var rooms = $firebaseArray(ref);
 
-    var refMessages = firebase.database().ref("rooms");
+    var refMessages = firebase.database().ref("messages");
   
 
     return {
       all: rooms,
-      create: function(room) {
-        rooms.$add({name: room});
-      },
       getMessages: function(roomId) {
-        var messages = $firebaseArray(refMessages.orderByChild("roomId".equalTo(roomId)))
+
+        // refMessages.orderByChild("roomId").equalTo(roomId)
+        var messages = $firebaseArray(refMessages.orderByChild("roomId").equalTo(roomId))
+        console.log(messages);
         return messages;
       }
     };

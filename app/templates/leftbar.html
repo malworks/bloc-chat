@@ -19,7 +19,7 @@
 					</a>
 				</section>
 				
-				<section class=""> 	
+				<section class="rooms-list"> 	
 					<ul>
 						<li ng-repeat="zebra in room.rooms" ng-click="room.setActiveRoom(zebra)">
 							 {{zebra.name}}
@@ -31,9 +31,10 @@
 	</div>	
 	<div class="col-lg-9 chatbox">
 		{{room.activeRoom}}
+		Messages go here:
 		<ul>
 			<li ng-repeat="giraffe in room.listMessages">
-			{{giraffe}}
+			{{giraffe.content}}
 			</li>
 		</ul>
 		
