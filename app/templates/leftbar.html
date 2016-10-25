@@ -1,5 +1,9 @@
 <div class="row">
+
 	<div class="col-lg-4 topbar">
+		
+
+
 		<h3>{{room.activeRoom.name}}</h3>
 	</div>
 </div>
@@ -34,9 +38,16 @@
 		Messages go here:
 		<ul>
 			<li ng-repeat="giraffe in room.listMessages">
-			{{giraffe.content}}
+			{{room.currentUser}} : {{giraffe.content}}
 			</li>
 		</ul>
+
+		<h3 ng-show="room.currentUser">User Name: CAIRO</h3>
+		<form ng-hide="room.currentUser">
+			<input type="text" ng-model="name">
+			<input type="submit" ng-click="room.createUser(name)" value="Sign In">
+		</form>
+
 		
 
 		<div class="input">
