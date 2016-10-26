@@ -18,12 +18,13 @@
 }
 
 .topbar h3 {
-	position: relative;
+	position: absolute;
 	font-family: "balboa";
 	color: #fff;
 	display: table-cell;
 	font-size: 2rem;
-	left: 392px;
+	left: 26%;
+	padding: 2rem;
 }
 
 .chatbox {
@@ -73,15 +74,6 @@
 .rooms ul li {
 	font-family: 'balboa';
 	color: #fff;
-}
-
-.row {
-	margin-right: 0;
-	margin-left: 0;
-}
-
-.row .col-md-12 {
-	padding: 2.5rem;
 }
 
  h2 {

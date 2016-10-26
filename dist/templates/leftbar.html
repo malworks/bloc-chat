@@ -1,9 +1,12 @@
+<div class="container-fluid">
 <div class="row ">
-	<div class="col-sm-4 topbar">
+
+	<!-- Start top bar -->
+	<div class="col-sm-9 topbar">
 		<h3>{{room.activeRoom.name}}</h3>
 	</div>
-</div>
-<div class="row">
+
+	<!-- Start left nav -->
 	<div class="col-sm-3 leftnav">
 		<div class="row">
 			<div class="col-sm-12">
@@ -28,8 +31,10 @@
 				</section>
 			</div>
 		</div>
-	</div>	
-	<div class="col-sm-9 chatbox">
+	</div>
+
+	<!-- Start chat box -->	
+	<div class="col-sm-6 chatbox">
 		{{room.activeRoom}}
 		Messages go here:
 		<ul>
@@ -38,11 +43,12 @@
 			</li>
 		</ul>
 		
-
 		<div class="input">
 			<input type="text" class="form-control textfield" id="usr">	
 		</div>
 	</div>
+
+</div>
 </div>
 
 
