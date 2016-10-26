@@ -6,9 +6,7 @@
 
 .leftnav .logo {
 	position: relative;
-	top: 6%;
-	left: 6%;
-
+	padding: 2rem;
 }
 
 .topbar {
@@ -20,12 +18,13 @@
 }
 
 .topbar h3 {
-	position: relative;
+	position: absolute;
 	font-family: "balboa";
 	color: #fff;
 	display: table-cell;
 	font-size: 2rem;
-	left: 392px;
+	left: 26%;
+	padding: 2rem;
 }
 
 .chatbox {
@@ -48,9 +47,9 @@
 
 .rooms {
 	display: table;
-	left: 1.5rem;
 	position: relative;
-	width: 21rem;
+	width: 100%;
+	padding: 2rem;
 }
 
 .rooms h3 {
@@ -77,19 +76,6 @@
 	color: #fff;
 }
 
-.row {
-	margin-right: 0;
-	margin-left: 0;
-}
-
-.create-room {
-
-}
-
-.row .col-lg-12 {
-	padding: 2.5rem;
-}
-
  h2 {
 	font-family: "balboa";
 	color: #666;
@@ -103,3 +89,4 @@
  .modal-content {
  	height: 3%;
  }
+
