@@ -6,9 +6,7 @@
 
 .leftnav .logo {
 	position: relative;
-	top: 6%;
-	left: 6%;
-
+	padding: 2rem;
 }
 
 .topbar {
@@ -48,9 +46,9 @@
 
 .rooms {
 	display: table;
-	left: 1.5rem;
 	position: relative;
-	width: 21rem;
+	width: 100%;
+	padding: 2rem;
 }
 
 .rooms h3 {
@@ -82,11 +80,7 @@
 	margin-left: 0;
 }
 
-.create-room {
-
-}
-
-.row .col-lg-12 {
+.row .col-md-12 {
 	padding: 2.5rem;
 }
 
@@ -103,3 +97,4 @@
  .modal-content {
  	height: 3%;
  }
+
