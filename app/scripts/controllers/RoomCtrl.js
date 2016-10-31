@@ -9,7 +9,7 @@
       };
 
       this.createUser = function(name) {
-        this.currentUser = name
+        this.currentUser = name;
       }
     }
     
