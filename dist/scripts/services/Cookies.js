@@ -1,14 +1,17 @@
 (function() {
 	function BlocChatCookies($cookies, $uibModal) {
-    var currentUser = $cookies.get('blocChatCurrentUser');
-    if (!currentUser || currentUser === '') {
-        $uiModal.open({
-        	templateUrl: '/templates/modal_user.html',
-            controller: 'ModalUserCtrl',
-            size: 'md', 
-            backdrop: 'static'
-        });
-    };
+
+        var currentUser = $cookies.get('blocChatCurrentUser');
+        if (!currentUser || currentUser === '') {
+            $uibModal.open({
+            	templateUrl: '/templates/modal_user.html',
+                controller: 'ModalUserCtrl',
+                controllerAs: 'modalUser',
+                size: 'md', 
+                backdrop: 'static'
+            });
+        };
+
   	};
 
 

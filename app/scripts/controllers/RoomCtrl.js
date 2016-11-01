@@ -1,7 +1,7 @@
 (function() {
-    function RoomCtrl(Room) {
+    function RoomCtrl(Room, CurrentUser, $scope) {
   		this.rooms = Room.all;
-      
+      this.currentUser = CurrentUser.getCurrentUser();
       this.setActiveRoom = (room) => {
         this.activeRoom = room;
         this.listMessages = Room.getMessages(this.activeRoom.$id);
@@ -11,9 +11,20 @@
       this.createUser = function(name) {
         this.currentUser = name;
       }
+
+     
+
+      $scope.$watch(function(){
+        return CurrentUser.getCurrentUser()
+      }, () => {
+        console.log("Change Occurred")
+        this.currentUser = CurrentUser.getCurrentUser();
+      })
+
+
     }
     
     angular
         .module('blocChat')
-        .controller('RoomCtrl', ['Room', RoomCtrl]);
+        .controller('RoomCtrl', ['Room', 'CurrentUser', '$scope', RoomCtrl]);
  })();

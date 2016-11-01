@@ -5,6 +5,7 @@
 	<!-- Start top bar -->
 	<div class="col-sm-9 topbar">
 
+
 		<h3>{{room.activeRoom.name}}</h3>
 	</div>
 
@@ -14,6 +15,7 @@
 			<div class="col-sm-12">
 				<img class="logo img-responsive" src="assets/images/logo.png" alt="chatter logo">
 				<h5 ng-show="room.currentUser">User Name: CAIRO</h5>
+				<h1>name: {{room.currentUser}}</h1>
 			</div>
 		</div>
 		<div class="row">
@@ -45,11 +47,6 @@
 			{{room.currentUser}} : {{giraffe.content}}
 			</li>
 		</ul>
-
-		<form ng-hide="room.currentUser">
-			<input type="text" ng-model="name">
-			<input type="submit" ng-click="room.createUser(name)" value="Sign In">
-		</form>
 
 		
 		<div class="input">
