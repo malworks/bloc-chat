@@ -7,7 +7,7 @@
             	templateUrl: '/templates/modal_user.html',
                 controller: 'ModalUserCtrl',
                 controllerAs: 'modalUser',
-                size: 'md', 
+                size: 'sm', 
                 backdrop: 'static'
             });
         };

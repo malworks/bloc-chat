@@ -2,11 +2,13 @@
 	padding: 0.5rem;
 	background-color: #666;
 	height: 100vh;
+	min-width: 280px;
 }
 
 .leftnav .logo {
 	position: relative;
-	padding: 2rem;
+	padding: 2rem 2rem 0 2rem;
+	min-width: 280px;
 }
 
 .topbar {
@@ -90,3 +92,6 @@
  	height: 3%;
  }
 
+.user {
+	padding-left: 30%;
+}

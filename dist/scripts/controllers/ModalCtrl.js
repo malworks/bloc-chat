@@ -5,7 +5,7 @@
             var modalInstance = $uibModal.open({
                 templateUrl: '/templates/modal.html',
                 controller: 'ModalDialog',
-                size: 'md', 
+                size: 'sm', 
                 backdrop: 'static'
             });
         };
