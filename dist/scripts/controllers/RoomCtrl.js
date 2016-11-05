@@ -21,6 +21,7 @@
         this.currentUser = CurrentUser.getCurrentUser();
       })
 
+      this.send = Room.send;
 
     }
     
