@@ -49,15 +49,18 @@
 
 		
 		<div class="input">
-			<input type="text" class="form-control textfield" id="usr">
+			<input type="text" class="form-control textfield" id="usr" ng-model="room.newMessage">
 			
-        	<img class="icon-submit" ng-click="room.send(room.message, currentRoom)" src="assets/images/icon_send.png">
+        	<img class="icon-submit" ng-click="room.send()" src="assets/images/icon_send.png">
 		</div>
 	</div>
 
 </div>
 </div>
 </div>
+
+<!-- How do I connect the submit button to what's typed into the input field?
+Why can't I $add? -->
 
 
 	

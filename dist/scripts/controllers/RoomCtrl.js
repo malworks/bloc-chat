@@ -5,7 +5,6 @@
       this.setActiveRoom = (room) => {
         this.activeRoom = room;
         this.listMessages = Room.getMessages(this.activeRoom.$id);
-      
       };
 
       this.createUser = function(name) {
@@ -21,8 +20,19 @@
         this.currentUser = CurrentUser.getCurrentUser();
       })
 
-      this.send = Room.send;
+      this.send = () => {
+        var message = {
+          content: this.newMessage,
+          username: this.currentUser,
+          sentAt: new Date().getTime(),
+          roomId: this.activeRoom.$id
+        }
 
+        console.log(message)
+
+        Room.send(message);
+        this.newMessage = "";
+      }
     }
     
     angular
